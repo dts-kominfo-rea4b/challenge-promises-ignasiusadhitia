@@ -11,11 +11,11 @@ const promiseOutput = async (reaksi) => {
       ...reaksiSetelahMenontonDiTheaterVGC,
     ];
 
-    const hitungJumlahReaksi = reaksiSetelahMenontonDiKeduaTheater.filter(
+    const jumlahReaksi = reaksiSetelahMenontonDiKeduaTheater.filter(
       (hasilMenonton) => hasilMenonton.hasil === reaksi
     ).length;
 
-    return hitungJumlahReaksi;
+    return jumlahReaksi;
   } catch (error) {
     return error.message + "!";
   }
